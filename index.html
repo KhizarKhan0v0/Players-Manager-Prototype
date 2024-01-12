@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Players Manager</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        #MainMenu{
+            display: flex;
+       
+        }
+        #ShowMenu{
+            display: none;
+        }
+        #ClashZonePlayers{
+            display: none;
+        }
+        #WrestleZonePlayers{
+            display: none;
+        }
+        #ShowAll{
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <h1>Welcome To The Wrestle Univers</h1>
+    </div>
+
+    <div id="MainMenu" class="MainStyle">
+        <button onclick="Show_players_btn()">Show Players</button>
+        <button>Match Menu</button>
+        <button>Search Players</button>
+    </div>
+
+
+
+    <!-- Show Players Menu -->
+    <div id="ShowMenu" class="MainStyle">
+        
+        <button onclick="Show_clash_zone_btn()">Clash Zone</button><!-- ✅ -->
+        <button onclick="Show_wrestle_zone_classic()">Wrestle Zone Classic</button><!-- ✅ -->
+        <button onclick="Show_all_players()">All Players</button> <!--✅-->
+
+    </div>
+
+    <div id="ClashZonePlayers" class="MainStyle playersContainerShow">
+        
+        
+    </div>
+    <div id="WrestleZonePlayers" class="MainStyle playersContainerShow">
+        
+        
+    </div>
+    
+    
+    <div id="ShowAll" class="MainStyle playersContainerShow ">
+        
+        
+    </div>
+
+
+
+
+    
+    <script src="./script.js"></script>
+    <script src="./buttons.js"></script>
+</body>
+</html>
